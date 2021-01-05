@@ -1,0 +1,439 @@
+/* == RESET CSS mini == */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+* {
+	font-size: 1em;
+}
+html {
+	font-size: 62.5%;
+}
+html * {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',    'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	background-color: transparent;
+}
+a:link,
+select {
+	position: relative;
+	font-size: inherit;
+}
+a:link,
+a:visited,
+[type="button"] {
+	display: initial;
+}
+dfn,
+em {
+	font-style: italic;
+}
+sub,
+sup {
+	position: relative;
+	line-height: 0;
+}
+sub {
+	vertical-align: sub;
+}
+sup {
+	vertical-align: super;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+hr {
+	height:   0;
+	overflow: visible;
+}
+ol,
+ul {
+	margin:  0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font:   inherit;
+	margin: 0;
+}
+button {
+	overflow: visible;
+	background-image: none;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+}
+button:hover,
+input:hover,
+label[for]:hover,
+select:hover,
+summary:hover,
+textarea:hover {
+	cursor: pointer;
+}
+:disabled:hover,
+:invalid[type="submit"]:hover {
+	cursor: not-allowed;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border:  0;
+	padding: 0;
+}
+[type="submit"] {
+	position: relative;
+	font-weight: bold;
+}
+input {
+	line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+input:focus,
+input:valid,
+textarea:focus,
+textarea:valid {
+	font-style: normal;
+	opacity: 1;
+}
+fieldset,
+form {
+	position: relative;
+}
+legend {
+	border:  0;
+	padding: 0;
+}
+textarea {
+	width: 100%;
+	resize: vertical;
+	overflow-y: auto;
+}
+[placeholder] {
+	font-style: italic;
+	opacity: .9;
+}
+
+
+/* == FONTS | TYPOS == */
+@font-face {
+    font-family: 'AvertaDemoPE';
+    src: url('../assets/fonts/AvertaDemoPE-Regular.ttf');
+}
+
+/* == MAIN ELEMENTS == */
+body {
+		display: flex;
+		flex-direction: column;
+	min-height: 100vh;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',    'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 
+	'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'AvertaDemoPE';
+    font-size: 13px;
+    margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/* == HEADER == */
+header {
+		flex: none; /* permet de sticky le header en top */
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #c1c1c1;
+    background-color: #f2f2f2;
+}
+header .container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+	width: 90%;
+	height: 96px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: transparent;
+}
+
+.haut-gauche {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	width: 50%;
+	height: 80%;
+	background-color: transparent;
+}
+.haut-gauche h1 {
+	margin: 0 0 0 64px;
+	padding: 0;
+    font-size: 21px;
+	text-shadow: #999999 1px 1px 3px;
+	background-color: transparent;
+}
+.haut-gauche h3 {
+	margin: 8px 0 0;
+	padding: 0;
+	letter-spacing: 2px;
+	background-color: transparent;
+}
+
+.haut-droite {
+    width: 50%;
+	height: 80%;
+    background-color: transparent;
+}
+.haut-droite p {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+		align-content: flex-end;
+		align-self: flex-end;
+		flex-basis: auto;
+    width: auto;
+	margin: 0 20px 0 0;
+	padding: 0;
+    background-color: transparent;
+}
+
+.navbar {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+    width: 100%;
+	height: 20%;
+    background-color: transparent;
+}
+.navbar ul {
+    background-color: transparent ;
+}
+.navbar ul li {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    background-color: transparent;
+}
+.navbar-item a {
+	margin: 0;
+	padding: 0 48px 3px 40px;
+    background-color: transparent;
+}
+
+
+/* == SECTION == */
+section {
+		flex: 1;
+		height: 100%;
+		padding: var(--space) var(--space) 0;
+		/* permet de sticky le header et le footer + reste de la page occupée par 'main' i.e. 'section' */
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+section .container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	width: 90%;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.milieu-haut-gauche {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	width: 44%;
+	background-color: transparent;
+}
+
+.milieu-haut-droite {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-self: center ;
+	width: 56%;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+.milieu-haut-droite p:first-child {
+	color: blue;
+	margin-bottom: 20px;
+}
+
+.milieu-gauche {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	width: 60%;
+	background-color: transparent;
+}
+.milieu-gauche h2 {
+	width: 100%;
+	margin: 10px 0 0;
+	padding: 20px 0 0;
+	background-color: transparent;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	vertical-align: top;
+}
+.milieu-gauche img {
+	margin: 0;
+	padding: 0;
+	float: left;
+	background-color: violet;
+}
+.milieu-gauche table img {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+.milieu-droite {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+.quisuisje,
+.experience,
+.contact {
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+.experience {
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+.contact {
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+.contact form {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+}
+.quisuisje,
+.experience,
+.contact {
+	width: 80%;
+	margin-top: 10px;
+	border: solid 1px #c1c1c1;
+	border-radius: 10px;
+}
+
+.quisuisje h4,
+.experience h4,
+.contact h4 {
+	margin: 0 0 10px;
+	padding: 4px 0;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;	
+	font-weight: bold;
+	text-align: center;
+	background-color: transparent;
+}
+
+
+
+/* == FOOTER == */
+footer {
+		flex: none; /* permet de sticky le footer en bottom */
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #c1c1c1;
+    background-color: #f2f2f2;
+}
+footer .container {
+	width: 90%;
+	height: 96px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: transparent;
+}
+
+footer nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+    width: auto;
+	height: 20%;
+    background-color: transparent;
+}
+
+footer nav ul li {
+    display: inline;
+    list-style-type: none;
+    background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+footer nav ul li a {
+    display: inline-block;
+	margin: 0;
+	padding: 0;
+    background-color: transparent;
+}
